@@ -42,12 +42,12 @@ app.post('/insertar', (req, res)=>{
     db.collection('Valores').add({
       fecha: new Date(),
       latitud: req.body.latitud,
-      longirud: req.body.longirud
+      longitud: req.body.longitud
     });
     res.send({
       fecha: new Date(),
       latitud: req.body.latitud,
-      longirud: req.body.longirud,
+      longitud: req.body.longitud,
       status: 'Valores insertados!'
   })
 })
